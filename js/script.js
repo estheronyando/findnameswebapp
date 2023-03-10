@@ -8,3 +8,9 @@ function checkForm(form) {
 				form.dob.focus();
 				return false;
 			}
+    // month value between 1 and 12
+			if(regs[2] < 1 || regs[2] > 12) {
+				alert("Invalid value for month, please enter a valid month: " + regs[2]);
+				form.dob.focus();
+				return false;
+			}			
