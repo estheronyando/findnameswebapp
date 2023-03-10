@@ -43,5 +43,12 @@ function checkForm(form) {
 	function farRight(MM) {
 		return Math.floor(26 * (MM + 1) / 10);
 	}
+	var dateArray = form.dob.value.split("/");
+	var day = parseInt(dateArray[0]);
+	var month = parseInt(dateArray[1]);
+	var year = parseInt(dateArray[2]);
+	
+	var CC = Math.floor(year / 100);
+	var YY = year % 100;
 }
 					
