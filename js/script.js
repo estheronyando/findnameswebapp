@@ -57,5 +57,11 @@ function checkForm(form) {
 	const middleResult = middle(YY)
 	var calculationResult = (farLeftResult + middleResult + farRightResult + day) % 7
 	const wholeNumber = calculationResult.toPrecision(1);
+
+	//alert(wholeNumber);
+	// calculationResult = 2
+	const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+	const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+	//alert(maleNames);
 }
 					
