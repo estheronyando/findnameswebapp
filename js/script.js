@@ -13,4 +13,10 @@ function checkForm(form) {
 				alert("Invalid value for month, please enter a valid month: " + regs[2]);
 				form.dob.focus();
 				return false;
-			}			
+			}
+	// year value between 1902 and 2023
+	if(regs[3] > (new Date()).getFullYear()) {
+		alert("Invalid value for year, please enter a valid year: " + regs[3] + " - must be less than or equal to  " + (new Date()).getFullYear());
+		form.dob.focus();
+		return false;
+	}					
