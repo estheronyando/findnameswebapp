@@ -72,5 +72,7 @@ function checkForm(form) {
 	} else {
 		alert('Enter a valid gender')
 }
+alert(`Your day name is ${result}`, )
+return true;
 }
 					
