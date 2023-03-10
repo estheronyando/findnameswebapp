@@ -50,5 +50,12 @@ function checkForm(form) {
 	
 	var CC = Math.floor(year / 100);
 	var YY = year % 100;
+
+
+	const farLeftResult = farLeft(CC)
+	const farRightResult = farRight(month)
+	const middleResult = middle(YY)
+	var calculationResult = (farLeftResult + middleResult + farRightResult + day) % 7
+	const wholeNumber = calculationResult.toPrecision(1);
 }
 					
