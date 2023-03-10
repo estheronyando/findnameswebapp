@@ -31,5 +31,17 @@ function checkForm(form) {
 	var gender = document.getElementById('gender').value;
 	//alert(form.gender.value);
 	
+
+	function farLeft(CC) {
+		return Math.floor((CC / 4) - 2 * CC - 1);
+	}
+
+	function middle(YY) {
+		return Math.floor(5 * YY / 4);
+	}
+
+	function farRight(MM) {
+		return Math.floor(26 * (MM + 1) / 10);
+	}
 }
 					
