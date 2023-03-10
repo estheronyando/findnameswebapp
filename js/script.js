@@ -19,4 +19,12 @@ function checkForm(form) {
 		alert("Invalid value for year, please enter a valid year: " + regs[3] + " - must be less than or equal to  " + (new Date()).getFullYear());
 		form.dob.focus();
 		return false;
-	}					
+	}
+	} else {
+		alert("Invalid date format use dd/mm/yyyy: " + form.dob.value);
+		form.dob.focus();
+		return false;
+	}
+}
+}
+					
