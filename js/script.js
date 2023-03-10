@@ -63,5 +63,14 @@ function checkForm(form) {
 	const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 	const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 	//alert(maleNames);
+
+	var result;
+	if(gender == "Male") {
+		result = maleNames[wholeNumber]
+	} else if(gender == "Female") {
+		result = femaleNames[wholeNumber]
+	} else {
+		alert('Enter a valid gender')
+}
 }
 					
